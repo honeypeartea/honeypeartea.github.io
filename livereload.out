@@ -111,3 +111,73 @@
 [I 211221 06:31:25 handlers:132] Browser Connected: http://localhost:8000/history.html
 [I 211221 06:31:28 handlers:132] Browser Connected: http://localhost:8000/history.html
 [I 211221 07:21:21 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:26:51 handlers:132] Browser Connected: http://localhost:8000/history.html
+[I 211221 07:26:52 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:47:48 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/about.html
+[I 211221 07:47:49 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:48:38 handlers:132] Browser Connected: http://localhost:8000/
+[I 211221 07:48:46 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:49:05 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:49:39 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/about.html
+[I 211221 07:49:40 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:49:40 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:50:09 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/about.html
+[I 211221 07:50:09 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:50:09 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:50:18 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:50:49 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:50:49 handlers:132] Browser Connected: http://localhost:8000/about.html#
+[I 211221 07:50:49 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:50:52 handlers:132] Browser Connected: http://localhost:8000/about.html#
+[I 211221 07:50:53 handlers:132] Browser Connected: http://localhost:8000/about.html#
+[I 211221 07:50:54 handlers:132] Browser Connected: http://localhost:8000/about.html#
+[I 211221 07:50:55 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:51:24 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/contact.html
+[I 211221 07:51:24 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:51:24 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:51:26 handlers:132] Browser Connected: http://localhost:8000/contact.html
+[I 211221 07:51:48 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/index.html
+[I 211221 07:51:48 handlers:132] Browser Connected: http://localhost:8000/contact.html
+[I 211221 07:51:49 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:51:50 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:52:06 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:52:07 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:52:22 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/pricing.html
+[I 211221 07:52:22 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:52:22 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:52:25 handlers:132] Browser Connected: http://localhost:8000/pricing.html
+[I 211221 07:52:34 handlers:132] Browser Connected: http://localhost:8000/pricing.html
+[I 211221 07:52:35 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:52:38 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:09 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/about.html
+[I 211221 07:53:09 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:09 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:53:10 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:28 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:53:28 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:29 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:53:38 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:53:38 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:38 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:53:51 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:53:51 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:51 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:53:58 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:53:59 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:54:00 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:54:22 handlers:89] Reload 2 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:54:22 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:54:22 handlers:132] Browser Connected: https://minghao-project.herokuapp.com/
+[I 211221 07:55:53 handlers:89] Reload 1 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/static/css/style.css
+[I 211221 07:55:57 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:57:34 handlers:89] Reload 1 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:57:34 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:58:35 handlers:89] Reload 1 waiters: /Users/xiaohu/Desktop/GitHub/honeypeartea.github.io/honeypeartea/templates/base.html
+[I 211221 07:58:35 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:58:54 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:59:03 handlers:132] Browser Connected: http://localhost:8000/about.html
+[I 211221 07:59:06 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:59:08 handlers:132] Browser Connected: http://localhost:8000/prediction.html
+[I 211221 07:59:10 handlers:132] Browser Connected: http://localhost:8000/index.html
+[I 211221 07:59:11 handlers:132] Browser Connected: http://localhost:8000/chance.html
+[I 211221 07:59:11 handlers:132] Browser Connected: http://localhost:8000/index.html
