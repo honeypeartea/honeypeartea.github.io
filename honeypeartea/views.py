@@ -98,16 +98,70 @@ class admission_chance(TemplateView):
 
             if college == 'Los Angeles':
                 if gpa >= 3.5 and schoolrank == 'top_30':
-                    print(f' === You will get in UCLA!!!! ===')
                     result = high + college
                 elif gpa >= 3.5 and schoolrank == 'top_50':
-                    print(f' === You will get in UCLA!!!! ===')
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Berkeley':
+                if gpa >= 3.7 and schoolrank == 'top_30':
+                    result = high + college
+                elif gpa >= 3.5 and schoolrank == 'top_50':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'San Diego':
+                if gpa >= 3.3 and schoolrank == 'top_30':
+                    result = high + college
+                elif gpa >= 3.0 and schoolrank == 'top_50':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Santa Barbara':
+                if gpa >= 3.0 and schoolrank == 'top_30':
+                    result = high + college
+                elif gpa >= 2.7 and schoolrank == 'top_50':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Irvine':
+                if gpa >= 3.5 and schoolrank == 'top_50':
+                    result = high + college
+                elif gpa >= 3.0 and schoolrank == 'top_70':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Davis':
+                if gpa >= 3.0 and schoolrank == 'top_50':
+                    result = high + college
+                elif gpa >= 3.0 and schoolrank == 'top_70':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Santa Cruz':
+                if gpa >= 3.0 and schoolrank == 'top_50':
+                    result = high + college
+                elif gpa >= 2.7 and schoolrank == 'top_70':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Riverside':
+                if gpa >= 3.0 and schoolrank == 'top_50':
+                    result = high + college
+                elif gpa >= 2.5 and schoolrank == 'top_70':
+                    result = mid + college
+                else:
+                    result = low + college
+            elif college == 'Merced':
+                if gpa >= 3.0 and schoolrank == 'top_70':
+                    result = high + college
+                elif gpa >= 2.5 and schoolrank == 'top_100':
                     result = mid + college
                 else:
                     result = low + college
             else:
                 print('=== you are fucked ===')
-                result = 0.1
+                result = "Please input again"
 
         args = {'form': form, 'result': result}
         return render(request, self.templatename, args)
