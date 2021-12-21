@@ -51,12 +51,25 @@ class school_predict(TemplateView):
             ap = form.cleaned_data['ap']
 
             # Main decision conditions
-            if gpa >= 3 and schoolrank == 'top_30':
+            if gpa >= 3.7 and schoolrank == 'top_30':
                 print(f' === You will get in UCLA!!!! ===')
+                result = 'UC Berkeley'
+            elif gpa >= 3.5 and schoolrank == 'top_30':
                 result = 'UCLA'
+            elif gpa >= 3.0 and schoolrank == 'top_30':
+                result = 'UC San Diego'
+            elif gpa >= 3.0 and schoolrank == 'top_50':
+                result = 'UC Santa Barbara'
+            elif gpa >= 3.0 and schoolrank == 'top_70':
+                result = 'UC Irvine'
+            elif gpa >= 3.0 and schoolrank == 'top_100':
+                result = 'UC Davis'
+            elif gpa >= 2.5 and schoolrank == 'top_70':
+                result = 'UC Santa Cruz'
+            elif gpa >= 2.5 and schoolrank == 'top_100':
+                result = 'UC Riverside'
             else:
-                print('=== you are fucked ===')
-                result = 'Stanford'
+                result = 'UC Merced'
 
         args = {'form': form, 'result': result}
         return render(request, self.templatename, args)
@@ -78,10 +91,20 @@ class admission_chance(TemplateView):
             ap = form.cleaned_data['ap']
             college = form.cleaned_data['college']
 
+            high = "You have a high chance of being admitted to UC "
+            mid =  "You have a medium chance of being admitted to UC "
+            low =  "You have a low chance of being admitted to UC"
             # Main decision conditions
-            if gpa >= 3 and schoolrank == 'top_30' and college == 'Los Angeles':
-                print(f' === You will get in UCLA!!!! ===')
-                result = 0.7
+
+            if college == 'Los Angeles':
+                if gpa >= 3.5 and schoolrank == 'top_30':
+                    print(f' === You will get in UCLA!!!! ===')
+                    result = high + college
+                elif gpa >= 3.5 and schoolrank == 'top_50':
+                    print(f' === You will get in UCLA!!!! ===')
+                    result = mid + college
+                else:
+                    result = low + college
             else:
                 print('=== you are fucked ===')
                 result = 0.1
