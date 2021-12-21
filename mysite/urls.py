@@ -15,7 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from honeypeartea import views
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('index.html', views.index, name='index'),
+    path('about.html', views.about, name='about'),
+    path('courses.html', views.courses, name='courses'),
+    path('requirement.html', views.requirement, name='requirement'),
+    path('pricing.html', views.pricing, name='pricing'),
+    path('contact.html', views.contact, name='contact'),
+
+    path('prediction.html', views.school_predict.as_view(), name='prediction'),
+    path('chance.html', views.admission_chance.as_view(), name='chance'),
+    path('history.html', views.history_admission.as_view(), name='history'),
+
 ]
