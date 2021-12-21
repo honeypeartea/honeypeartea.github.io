@@ -9,9 +9,12 @@ from django.views.static import serve
 from django.urls import reverse
 import hashlib
 import os, csv
-from numpy import genfromtxt
+import pprint
 
 from honeypeartea.forms import SchoolPredict, AdmissionChance, HistoryAdmission
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -89,6 +92,12 @@ class admission_chance(TemplateView):
 class history_admission(TemplateView):
     templatename = 'history.html'
 
+    def csv2list(self, csvpath):
+        with open(csvpath, newline='') as f:
+            reader = csv.reader(f)
+            data = list(reader)
+            return data
+
     def get(self, request):
         form = HistoryAdmission()
         return render(request, self. templatename, {'form': form})
@@ -100,20 +109,42 @@ class history_admission(TemplateView):
             year = form.cleaned_data['year']
             category = form.cleaned_data['category']
 
-            # CSV file path
-            race_matrix = genfromtxt('../static/race.csv', delimiter=',')
-            print(race_matrix)
-
             # Check the result based on the searching category
-            if category == 'gpa':
-                pass
-            elif category == 'sat':
-                pass
-            elif category == 'race':
-                pass
-            else:
-                print(' == Something is wrong ==')
+            if category == 'race':
+                data = self.csv2list(os.path.join(PROJECT_ROOT, 'static/race.csv'))
+                dict = {
+                    'Asian': 0,
+                    'White': 0,
+                    'Hispanic': 0,
+                    'African': 0,
+                    'Indian': 0
+                }
+                for row in data:
+                    for race in dict.keys():
+                        if row[2] == college and race in row[3]  and row[7] == str(year):
+                            dict[race] += float(row[6])
+                # Round up to 100
+                value_sum = sum(dict.values())
+                dict['Asian'] += (100-value_sum)/2
+                dict['White'] += (100-value_sum)/2
+                pprint.pprint(dict)
+                result = dict
 
+            elif category == 'gpa':
+                data = self.csv2list(os.path.join(PROJECT_ROOT, 'static/gpa.csv'))
+                for row in data:
+                    if row[0] == str(year) and row[1] == college:
+                        print(f' - Found it! GPA: {row[2]}')
+                        result = row[2]
+
+            elif category == 'sat':
+                data = self.csv2list(os.path.join(PROJECT_ROOT, 'static/sat.csv'))
+                for row in data:
+                    if row[0] == college:
+                        print(f' - Found it! SAT: {row[1]}')
+                        result = row[1]
+            else:
+                result = 'Error input. Something went wrong.'
 
         args = {'form': form, 'result': result}
         return render(request, self.templatename, args)

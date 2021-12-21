@@ -1,5 +1,4 @@
 import os, csv
-from numpy import genfromtxt
 import pprint
 
 def csv2list(csvpath):
@@ -11,7 +10,7 @@ def csv2list(csvpath):
 def main():
     college = 'Davis'
     year = 2014
-    category = 'race'
+    category = 'sat'
 
     if category == 'race':
         data = csv2list('../static/race.csv')
@@ -42,7 +41,10 @@ def main():
     elif category == 'sat':
         data = csv2list('../static/sat.csv')
         for row in data:
-            
+            if row[0] == college:
+                print(f' - Found it! SAT: {row[1]}')
+                return row[1]
+
 
 if __name__ == '__main__':
     main()
