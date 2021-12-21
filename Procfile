@@ -1,1 +1,1 @@
-web: gunicorn honeypeartea.github.io.wsgi
+web: gunicorn mysite.wsgi
